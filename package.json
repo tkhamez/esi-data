@@ -1,0 +1,9 @@
+{
+  "name": "eve-esi-data",
+  "version": "1.0.0",
+  "author": "Tian Khamez",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
