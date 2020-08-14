@@ -38,16 +38,32 @@ async function fetchData(region) {
         constellations.push({
             id: constellation.constellation_id,
             name: constellation.name,
-            systems: constellation.systems,
+            regionId: constellation.region_id,
+            systems: constellation.systems, // list of integers
             position: { x: constellation.position.x, y: constellation.position.y, z: constellation.position.z }
         });
         console.log('  Constellation ' + constellation.name);
 
         for (let systemId of constellation.systems) {
             const system = await fetchSystem(systemId);
+            const planets = [];
+            if (system.planets) {
+                for (let planet of system.planets) {
+                    planets.push({
+                        planetId: planet.planet_id,
+                        moons: planet.moons, // list of integers
+                        asteroidBelts: planet.asteroid_belts // list of integers
+                    });
+                }
+            }
             systems.push({
                 id: system.system_id,
                 name: system.name,
+                constellationId: system.constellation_id,
+                starId: system.star_id,
+                planets: planets,
+                stations: system.stations, // list of integers
+                securityClass: system.security_class,
                 securityStatus: system.security_status,
                 stargates: system.stargates,
                 position: { x: system.position.x, y: system.position.y, z: system.position.z }
@@ -62,6 +78,8 @@ async function fetchData(region) {
                 stargates.push({
                     id: stargate.stargate_id,
                     name: stargate.name,
+                    systemId: stargate.system_id,
+                    typeId: stargate.type_id,
                     destination: {
                         stargateId: stargate.destination.stargate_id,
                         systemId: stargate.destination.system_id

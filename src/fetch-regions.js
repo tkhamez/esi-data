@@ -25,7 +25,8 @@ async function fetchData() {
         regions.push({
             id: region.region_id,
             name: region.name,
-            constellations: region.constellations
+            description: region.description,
+            constellations: region.constellations // list of integers
         });
         console.log('Region ' + region.name);
 

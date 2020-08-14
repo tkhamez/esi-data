@@ -6,12 +6,12 @@ Provides JSON files for some data from [ESI](https://esi.evetech.net/).
 
 Delete existing JSON files in `json/` (keep directories).
 
-Fetch regions:  
-`node src/fetch-regions.js`
+1. Fetch regions:  
+  `node src/fetch-regions.js`
 
-Fetch constellations, systems and stargates (it processes one region after the other, 
-repeat it until it ends without an error):  
-`node src/fetch-systems.js`
+2. Fetch constellations, systems and stargates (it processes one region after the other, 
+  repeat it until it ends without an error):  
+  `node src/fetch-systems.js`
 
 ## Copyright Notice
 
