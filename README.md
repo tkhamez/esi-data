@@ -1,17 +1,17 @@
 # EVE ESI Data
 
-Provides JSON files for some data from [ESI](https://esi.evetech.net/).
+Provides JSON files for some static data from [ESI](https://esi.evetech.net/).
 
 ## Regenerate Data
 
 Delete existing JSON files in `json/` (keep directories).
 
 1. Fetch regions:  
-  `node src/fetch-regions.js`
+  `node src/01-fetch-regions.js`
 
 2. Fetch constellations, systems and stargates (it processes one region after the other, 
   repeat it until it ends without an error):  
-  `node src/fetch-systems.js`
+  `node src/02-fetch-constellations-systems-stargates.js`
 
 ## Copyright Notice
 
