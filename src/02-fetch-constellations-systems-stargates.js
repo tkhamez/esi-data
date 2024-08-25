@@ -65,7 +65,7 @@ async function fetchData(region) {
                 stations: system.stations, // list of integers
                 securityClass: system.security_class,
                 securityStatus: system.security_status,
-                stargates: system.stargates,
+                stargates: system.stargates, // list of integers
                 position: { x: system.position.x, y: system.position.y, z: system.position.z }
             });
             console.log('    System ' + system.name);

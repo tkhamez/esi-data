@@ -2,6 +2,14 @@
 
 Provides JSON files for some static data from [ESI](https://esi.evetech.net/).
 
+Available data:
+- **Regions** with ID, name, description and constellation IDs.
+- **Constellations** with ID, name, region ID, system IDs and position (x, y, z).
+- **Systems** with ID, name, constellation ID, star ID, station IDs, security class and status, 
+  stargate IDs, position (x, y, z) and planets (with ID, moon and belt IDs).
+- **Stargates** with ID, name, system ID, type ID, destination (stargate and system IDs) 
+  and position (x, y, z).
+
 ## Regenerate Data
 
 Delete existing JSON files in `json/` (keep directories).
