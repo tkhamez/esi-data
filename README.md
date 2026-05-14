@@ -23,10 +23,10 @@ Delete existing JSON files in `json/` (keep directories).
 
 ## Copyright Notice
 
-This project is licensed under the [MIT license](LICENSE).
+This project is licensed under the [MIT licence](LICENSE).
 
 The ESI data is subject to the
-[EVE Developers License Agreement](https://developers.eveonline.com/resource/license-agreement)
+[Developer Licence Agreement](https://developers.eveonline.com/license-agreement)
 
-"EVE", "EVE Online", "CCP" and all related logos and images are trademarks or registered trademarks of 
-[CCP hf](https://www.ccpgames.com/). 
+EVE Online® and all related logos and other elements are trademarks of 
+[Fenris Creations](https://www.ccpgames.com/).
