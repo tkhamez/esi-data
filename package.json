@@ -1,9 +1,7 @@
 {
   "name": "esi-data",
   "version": "1.0.0",
+  "type": "module",
   "author": "Tian Khamez",
-  "license": "MIT",
-  "dependencies": {
-    "node-fetch": "^2.6.0"
-  }
+  "license": "MIT"
 }

@@ -1,11 +1,8 @@
 /**
- * Fetches constellations, systems and stargates
+ * Fetches constellations, systems, and stargates
  */
 
-'use strict';
-
-const fetch = require('node-fetch');
-const fs = require('fs');
+import fs from 'node:fs';
 
 const basePath = 'https://esi.evetech.net/latest/';
 
